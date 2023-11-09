@@ -1,0 +1,21 @@
+common:
+  randomseed: 7
+
+preprocessing:
+  fpath: data/01_raw/AID_1671201_datatable.csv
+  savepath: data/02_intermediate/data_int.csv
+  trainpath: data/03_processed/train.pq
+  valpath: data/03_processed/val.pq
+  radius: 3
+  nbits: 1024
+
+train:
+  insz: 1024
+  outsz: 256
+  hiddensz: 256
+  nlayer: 1
+  temp: 0.2
+  device: cpu
+  lr: 0.001
+  bsz: 128
+  epoch: 20
